@@ -22,10 +22,55 @@ img {
     max-width: 100%;
 }
 
+@font-face {
+    font-family: "Muller";
+    /* меняем url на local чтобы, если на устройстве уже есть эти шрифты, тогда использовались они */
+    src: local("Muller-Regular"),
+        url("../fonts/MullerRegular.woff2") format("woff2"),
+        url("../fonts/MullerRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    /* меняем url на local чтобы, если на устройстве уже есть эти шрифты, тогда использовались они */
+    src: local("Muller-Medium"),
+        url("../fonts/MullerMedium.woff2") format("woff2"),
+        url("../fonts/MullerMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    /* меняем url на local чтобы, если на устройстве уже есть эти шрифты, тогда использовались они */
+    src: local("Muller-Light"),
+        url("../fonts/MullerLight.woff2") format("woff2"),
+        url("../fonts/MullerLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Muller";
+    /* меняем url на local чтобы, если на устройстве уже есть эти шрифты, тогда использовались они */
+    src: local("Muller-Bold"),
+        url("../fonts/MullerBold.woff2") format("woff2"),
+        url("../fonts/MullerBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
+    background-color: #E5E5E5;
     padding: 30px 0;
     min-width: 1200px;
-    font-family: "font", sans-serif;
+    font-family: "Muller", sans-serif;
 }
 
 .list-reset {
@@ -41,12 +86,27 @@ body {
     cursor: pointer;
 }
 
+.btn {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 13px 20px;
+    color: #CC9933;
+    border: 1px solid #CC9933;
+    ;
+    border-radius: 10px;
+}
+
 .flex {
     display: flex;
 }
 
 .header {
     margin-bottom: 70px;
+}
+
+.link {
+    color: #CC9933;
 }
 
 .container {
@@ -63,20 +123,48 @@ body {
 }
 
 .header-logo {
+    width: 261px;
+    height: 54px;
     margin-right: 40px;
+}
+
+.header-phone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #666666;
+}
+
+.header-top-right {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    background-image: url(../img/Vector.svg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 35px;
 }
 
 .nav {
     padding-left: 45px;
     padding-right: 45px;
     height: 70px;
+    background: #FFFFFF;
+    border-radius: 15px;
     align-items: center;
     justify-content: space-between; 
-    outline: 1px solid coral;
 }
 
 .header-list-item:not(:last-child) {
     margin-right: 40px;
+}
+
+.header-list-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
 }
 
 .header-btn:not(:last-child) {
