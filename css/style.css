@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    width: 100%;
 }
 
 *,
@@ -77,7 +78,7 @@ img {
 body {
     background-color: #E5E5E5;
     padding: 30px 0;
-    min-width: 1200px;
+    width: 1200px;
     font-family: "Muller", sans-serif;
 }
 
@@ -123,8 +124,13 @@ body {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+   }
+
+
+/* HEADER */
+   .header-container {
     margin-bottom: 70px;
-}
+   }
 
 .header-top {
     margin-bottom: 30px;
@@ -183,6 +189,10 @@ body {
 
 /* SPECIAL OFFERS  */
 
+.special-offers-container {
+    margin-bottom: 70px;
+}
+
 .section-title {
     margin: 0;
     margin-bottom: 20px;
@@ -233,9 +243,6 @@ body {
     justify-content: space-between;
 }
 
-.special-offers {
-    padding-bottom: 70px;
-}
 .place-offers-item {
     flex-direction: column;
     padding: 40px 108px 40px 45px;
@@ -272,10 +279,21 @@ body {
 }
 
 .special-offers-item-link {
+    width: 102px;
+    background-image: url(../img/rectangle-1.svg);
+    background-repeat: no-repeat;
+    background-position:right center;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #F0BF5F;
+}
+
+.services-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
 
 .special-offers-item {
@@ -289,18 +307,26 @@ height: 540px;
 /* ABOUT US */
 
 .about-us {
-    margin-bottom: 108px;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.about-us-title {
+    margin-bottom: 11px;
 }
 
 .about-us-descr {
     margin: 0;
     max-width: 888px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
 }
 
 /* SERVICES */
 
 .services {
-    margin-bottom: 32px;
+    margin-bottom: 70px;
 }
 
 .services-list {
@@ -313,6 +339,50 @@ height: 540px;
 
 .services-item {
     width: 573px;
+    background-position: top;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.div-services-item {
+    flex-direction: column;
+    padding: 191px 126px 50px 45px;
+}
+
+.services-link {
+    background-image: url(../img/Rectangle-2.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: fit-content;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+}
+
+.services-item-1{
+    margin-bottom: 23px;
+    background-color: #FFFFFF;
+    background-image: url(../img/services-photo-1.jpg);
+
+}
+
+.services-item-2{
+    background-color: #FFFFFF;
+    background-image: url(../img/services-photo-2.jpg);
+    margin-bottom: 23px;
+}
+
+.services-item-3{
+    background-color: #FFFFFF;
+    background-image: url(../img/services-photo-3.jpg); 
+}
+
+.services-item-4{
+    background-color: #FFFFFF;
+    background-image: url(../img/services-photo-4.jpg); 
 }
 
 /* ADVANTAGES */
