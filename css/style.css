@@ -100,7 +100,7 @@ body {
     font-size: 16px;
     line-height: 16px;
     padding: 13px 20px;
-    color: #CC9933;
+    color:#CC9933;
     border: 1px solid #CC9933;
     ;
     border-radius: 10px;
@@ -386,9 +386,12 @@ height: 540px;
 }
 
 /* ADVANTAGES */
-
 .advantages {
     margin-bottom: 48px;
+}
+
+.advantages-title {
+    margin-bottom: 30px;
 }
 
 .advantages-list {
@@ -398,12 +401,28 @@ height: 540px;
 .advantages-item {
     margin-bottom: 22px;
     width: 276px;
-    outline: 1px solid coral;
+    padding: 40px 42px 41px 45px;
+    background: #FFFFFF ;
+    border-radius: 15px;
 }
 
 .advantages-item:not(:nth-child(4n)) {
     margin-right: 22px;
+}
 
+.advantages-item-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.advantages-item-descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
 }
 
 /* PLACEMENT */
@@ -412,10 +431,61 @@ height: 540px;
     flex-wrap: wrap;
 }
 
+.placement-image {
+    margin-bottom: 35px;
+    border-radius: 15px 15px 0px 0px;
+}
+
 .placement-item {
     width: 374px;
+    height: 440px;
+    margin-bottom: 23px;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
 .placement-item:not(:nth-child(3n)) {
     margin-right: 24px;
+}
+
+.placement-dscr {
+    padding-left: 45px;
+}
+
+.placement-price {
+    margin-right: 47px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #999999;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.hotel-name {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.hotel-city {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999999;
+}
+
+.placement-item-9 {
+    width: 373px;
+    height: 440px;
+    background-image: url(../img/placement-9.svg);
+    border-radius: 15px;
 }
