@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    width: 100%;
+    width: 1200px;
 }
 
 *,
@@ -488,4 +488,19 @@ height: 540px;
     height: 440px;
     background-image: url(../img/placement-9.svg);
     border-radius: 15px;
+}
+
+.placement-item-div {
+    padding: 373px 54px 27px 54px;
+}
+
+.placement-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    padding-right: 15px;
+    background-image: url(../img/Rectangle-3.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
 }
